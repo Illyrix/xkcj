@@ -1,6 +1,5 @@
 var data_url = "http://xkfw.xjtu.edu.cn/xsxk/elect.xk?method=handleZxxk";
 var check_time_url = "http://xkfw.xjtu.edu.cn/xsxk/currentTime.xk";
-
 /*
 var sendData = {
     jxbid : "",

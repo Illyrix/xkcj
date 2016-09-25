@@ -15,6 +15,7 @@
     } else {
       formInput.removeAttribute('disabled');
       formBtn.removeAttribute('disabled');
+      showPrepareSend();
     }
   }
   checkStatus();
