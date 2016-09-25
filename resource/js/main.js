@@ -9,6 +9,7 @@
 
   function checkStatus() {
     if (!checkInput.checked) {
+      clearInterval(window.task);
       formInput.setAttribute('disabled', 'disabled');
       formBtn.setAttribute('disabled', 'disabled');
     } else {
