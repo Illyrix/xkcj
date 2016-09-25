@@ -1,0 +1,91 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrapSwitch.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrapSwitch.js"></script>
+    <title>XJTU Course Selection</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", "Microsoft YaHei", Tahoma, sans-serif;
+        font-size: 16px;
+        width: 36em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+      body p {
+          text-align: center;
+      }
+      body div.enable {
+          display: block;
+          width: 30em;
+          margin: auto;
+          margin-bottom: 0.4em;
+      }
+      body div.enable>span {
+          float: left;
+      }
+      body div.enable>div.switch {
+          float: right;
+      }
+      body form.form-inline {
+          width: 30em;
+          margin-top: 10px;
+          margin: auto;
+      }
+      body form.form-inline div.form-group input {
+          display: inline-block;
+          float: left;
+          width: 76%;
+      }
+      body form.form-inline div.form-group button {
+          display: inline-block;
+          width: 6.4em;
+          float: right;
+          clear: right;
+          margin-bottom: 2em;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="./js/popup.js"></script>
+  </head>
+  <body>
+    <p>
+        XJTU选课插件
+    </p>
+    <hr>
+    <div class="enable">
+        <span>Enable </span>
+        <div class="switch switch-small" data-on="success" data-off="warning">
+            <input type="checkbox" checked />
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <form class="form-inline" role="form">
+        <div class="form-group">
+               <input class="form-control col-xs-4" type="text" placeholder="Enter the class ID">
+               <button type="button" class="btn btn-default">
+                   <i class="fa fa-arrow-right" aria-hidden="true"></i>
+               </button>
+        </div>
+    </form>
+
+    <!--<img id="image-result" hidden>-->
+  </body>
+</html>

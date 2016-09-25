@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Xi'An Jiaotong University Course Selection",
+  "description": "An extension for selecting courses in XJTU. F**k (official) course selection system!",
+  "version": "1.0",
+
+  "icons": {
+      "16": "./resource/icon/to_do_16.png",
+      "48": "./resource/icon/to_do_48.png",
+      "128": "./resource/icon/to_do_128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "./resource/icon/to_do_48.png",
+    "default_title": "XJTU Course Selection",
+    "default_popup": "./resource/popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "http://xkfw.xjtu.edu.cn/",
+    "storage"
+  ]
+}
