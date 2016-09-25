@@ -1,4 +1,4 @@
-$.ready(function(){
+$(document).ready(function(){
 
         console.log("ready");
 $("#formBtn").click(function(){
