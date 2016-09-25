@@ -8,6 +8,7 @@ $("#formBtn").click(function(){
         var classID = $("#formInput").val();
         var JxbId = classIDToJxbID(classID);
         if (undefined === JxbId) {
+            showPrepareSend();
             alert("Class id is illegal. Please confirm your input.");
         }else{
             sendRequest(JxbId);
