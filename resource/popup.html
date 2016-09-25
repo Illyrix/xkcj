@@ -72,20 +72,21 @@
     <div class="enable">
         <span>Enable </span>
         <div class="switch switch-small" data-on="success" data-off="warning">
-            <input type="checkbox" checked />
+            <input id="isCheck" type="checkbox" checked />
         </div>
         <div style="clear:both;"></div>
     </div>
 
     <form class="form-inline" role="form">
         <div class="form-group">
-               <input class="form-control col-xs-4" type="text" placeholder="Enter the class ID">
-               <button type="button" id="start-process" class="btn btn-default">
+               <input id="formInput" class="form-control col-xs-4" type="text" placeholder="Enter the class ID">
+               <button id="formBtn" type="button" class="btn btn-default">
                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
                </button>
         </div>
     </form>
 
     <!--<img id="image-result" hidden>-->
+    <script src="./js/main.js"></script>
   </body>
 </html>
