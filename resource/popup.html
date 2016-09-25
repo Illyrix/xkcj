@@ -13,6 +13,7 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", "Microsoft YaHei", Tahoma, sans-serif;
         font-size: 16px;
+        color: #777;
         width: 36em;
         padding-top: 1em;
         padding-bottom: 1em;
@@ -37,6 +38,7 @@
           margin-top: 10px;
           margin: auto;
       }
+
       body form.form-inline div.form-group input {
           display: inline-block;
           float: left;
@@ -49,6 +51,24 @@
           clear: right;
           margin-bottom: 2em;
       }
+
+        .describe a {
+            display: block;
+            text-align: center;
+            margin-top: 0.8em;
+            margin-bottom: 2em;
+            text-decoration: underline;
+            color: #D3D3D3;
+        }
+        .describe a:hover{
+            text-decoration: none;
+            color: #777;
+        }
+        .describe {
+            float: left;
+            width: 100%;
+        }
+
     </style>
 
     <!--
@@ -79,6 +99,10 @@
                </button>
         </div>
     </form>
+
+    <div class="describe">
+        <a href="https://github.com/Illyrix/xkcj/blob/master/README.md" target="_blank">使用说明</a>
+    </div>
 
     <!--<img id="image-result" hidden>-->
     <script src="./js/popup.js"></script>
