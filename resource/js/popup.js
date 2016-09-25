@@ -18,15 +18,15 @@ $("#formBtn").click(function(){
 
 function showIsSending() {
     var formBtn = $('#formBtn i')[0];
-    formBtn.removeClass("fa-arrow-right");
-    formBtn.addClass("fa-refresh");
+    $(formBtn).removeClass("fa-arrow-right");
+    $(formBtn).addClass("fa-refresh");
     window.isSending = true;
 }
 
 function showPrepareSend() {
     var formBtn = $('#formBtn i')[0];
-    formBtn.removeClass("fa-refresh");
-    formBtn.addClass("fa-arrow-right");
+    $(formBtn).removeClass("fa-refresh");
+    $(formBtn).addClass("fa-arrow-right");
     window.isSending = false;
 }
 
