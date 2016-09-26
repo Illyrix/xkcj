@@ -49,7 +49,7 @@ function sendRequest(jxbID) {
     			console.log('Now!');
     			if (!cleared) {
     				clearInterval(window.task);
-    				window.task = setInterval(submitChoice, 1000);
+    				window.task = setInterval(submitChoice, 100);
     				cleared = true;
     			}
     		} else {
@@ -58,7 +58,7 @@ function sendRequest(jxbID) {
     	});
     }
 
-    window.task = setInterval(getTime, 500);
+    window.task = setInterval(getTime, 300);
     //window.task = setInterval(submitChoice, 1000);
 }
 
