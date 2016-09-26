@@ -1,7 +1,7 @@
 ## Chrome Extension For Course Selection Of XJTU
 
 ### Install
-下载 [此扩展]("https://github.com/Illyrix/xkcj/blob/master/xkcj.crx"), 并将其拖入 Chrome 界面. 点击安装此扩展即可.
+下载 [此扩展](https://github.com/Illyrix/xkcj/blob/master/xkcj.crx), 并将其拖入 Chrome 界面. 点击安装此扩展即可.
 
 ### Document
 使用本程序不代表一定能抢到. 作者对使用过程中出现的一切问题和后果概不负责, 也没有维护本程序的义务.
